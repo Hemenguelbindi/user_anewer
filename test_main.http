@@ -1,4 +1,24 @@
 # Test your FastAPI endpoints
 
-GET http://127.0.0.1:8000/Flynn Vang
+GET http://127.0.0.1:8000/name/Flynn Vang
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/age/69
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/gender/male
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/company/Google
+Accept: application/json
+
+
+###
+GET http://127.0.0.1:8000/email/turpis.non@Nunc.edu
 Accept: application/json

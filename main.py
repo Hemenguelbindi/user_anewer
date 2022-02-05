@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routes.user import user
+from routes.search_by_value_in_db import search
 
 app = FastAPI()
-app.include_router(user)
+app.include_router(search)

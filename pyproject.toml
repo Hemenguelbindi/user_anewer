@@ -10,7 +10,7 @@ fastapi = "^0.73.0"
 uvicorn = "^0.17.2"
 loguru = "^0.6.0"
 environs = "^9.5.0"
-pymongo = {extras = ["srv"], version = "^4.0.1"}
+motor = "^2.5.1"
 
 [tool.poetry.dev-dependencies]
 
