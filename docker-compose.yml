@@ -1,0 +1,18 @@
+version: "3.10"
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    command: uvicorn main:app --reload --workers 1 --host 0.0.0.0 --port 8000
+    depends_on:
+      - mongodb
+    env_file:
+      - .env
+
+  mongodb:
+    image: mongo:latest
+    env_file:
+      - .env
