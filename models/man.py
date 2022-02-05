@@ -2,7 +2,7 @@ from pydantic import BaseModel
 from datetime import date
 
 
-class User(BaseModel):
+class Man(BaseModel):
     name: str
     email: str
     age: int
@@ -11,7 +11,3 @@ class User(BaseModel):
     job_title: str
     gender: str
     salary: int
-
-    class Congig:
-        allow_population_by_field_name = True
-        arbitrary_types_allowed = True
