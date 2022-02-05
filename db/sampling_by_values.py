@@ -1,3 +1,4 @@
+import asyncio
 from db.connector_db import people_coll
 from schemas.user import people_entity
 from loguru import logger

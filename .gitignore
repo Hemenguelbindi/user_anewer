@@ -128,3 +128,5 @@ cython_debug/
 
 /employees.json
 /.env.dev
+/tests/test_connect.db
+/test_connect.db

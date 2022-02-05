@@ -1,5 +1,4 @@
 from pydantic import BaseModel
-from datetime import date
 
 
 class Man(BaseModel):
@@ -7,7 +6,7 @@ class Man(BaseModel):
     email: str
     age: int
     company: str
-    join_date: date
+    join_date: str
     job_title: str
     gender: str
     salary: int
