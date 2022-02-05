@@ -1,5 +1,6 @@
 from fastapi import APIRouter
 from db.sampling_by_values import (
+    retrieve_peoples_all,
     retrieve_peoples_one_by_name,
     retrieve_peoples_all_by_name,
     retrieve_peoples_one_by_age,
@@ -12,6 +13,13 @@ from db.sampling_by_values import (
 )
 
 search = APIRouter()
+
+
+# give all items in db
+@search.get('/all')
+async def give_all():
+    people = await retrieve_peoples_all()
+    return people
 
 
 # search by name
